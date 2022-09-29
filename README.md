@@ -9,14 +9,20 @@ docker compose -f docker-compose-dev.yml exec app bash
 docker compose -f docker-compose-dev.yml exec {name} bash
 ```
 
-Setup Laravel
+Setup Rails
 ```
 bundle install
+npm install
 ```
 
 Compile JS
 ```
 npm run watch
+```
+
+Check JS
+```
+npx tsc --noEmit
 ```
 
 Rails server

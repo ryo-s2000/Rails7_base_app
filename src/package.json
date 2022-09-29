@@ -2,10 +2,11 @@
   "dependencies": {
     "esbuild": "^0.15.9",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "typescript": "^4.8.4"
   },
   "scripts": {
-    "build": "esbuild app/javascript/*.* --bundle --sourcemap --outdir=app/assets/builds --loader:.js=jsx",
-    "watch": "esbuild app/javascript/*.* --watch --bundle --outdir=app/assets/builds --loader:.js=jsx"
+    "build": "esbuild app/frontend/*.* --bundle --sourcemap --outdir=app/assets/builds --loader:.js=jsx",
+    "watch": "esbuild app/frontend/*.* --watch --bundle --outdir=app/assets/builds --loader:.js=jsx"
   }
 }

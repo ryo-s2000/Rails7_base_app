@@ -1,9 +1,11 @@
 import React from 'react';
 import { createRoot } from 'react-dom/client';
-import HelloMessage from './components/HelloMessage';
+
+import './css/app.css';
+import Top from './javascript/pages/Top';
 
 const root = createRoot(document.getElementById('root'));
 
 document.addEventListener('DOMContentLoaded', () => {
-  root.render(<HelloMessage name="World" />);
+  root.render(<Top name="World" />);
 });
