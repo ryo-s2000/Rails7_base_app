@@ -11,12 +11,8 @@ docker compose -f docker-compose-dev.yml exec {name} bash
 
 Setup Laravel
 ```
-chmod -R 777 storage bootstrap/cache
-cp .env.example .env
-composer install
-npm install
-php artisan key:generate
-php artisan migrate
+bundle install
+rails s -p 3000 -b '0.0.0.0'
 ```
 
 Compile JS
@@ -31,4 +27,4 @@ docker compose -f docker-compose-dev.yml build --no-cache
 ```
 
 URL
-http://localhost:8080/
+http://localhost:3000
