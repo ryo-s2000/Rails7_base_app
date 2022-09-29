@@ -1,0 +1,17 @@
+version: '3'
+services:
+  db:
+    build: ./infra/dev/mysql
+    volumes:
+      - db-store:/var/lib/mysql
+    ports:
+      - 33060:3306
+  web:
+    build: ./infra/dev/ruby
+    volumes:
+      - ./src:/myapp
+    ports:
+      - "3000:3000"
+    tty: true
+volumes:
+  db-store:
