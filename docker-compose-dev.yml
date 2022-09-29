@@ -6,7 +6,7 @@ services:
       - db-store:/var/lib/mysql
     ports:
       - 33060:3306
-  web:
+  app:
     build: ./infra/dev/ruby
     volumes:
       - ./src:/myapp
