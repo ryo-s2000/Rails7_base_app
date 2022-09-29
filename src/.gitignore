@@ -35,4 +35,5 @@
 /config/master.key
 
 # js
-node_modules
+/node_modules
+/app/assets
